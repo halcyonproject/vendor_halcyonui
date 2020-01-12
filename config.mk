@@ -117,6 +117,10 @@ PRODUCT_PACKAGES += \
     NestQuickStep \
     ThemedIconsOverlay
 
+# Theme
+PRODUCT_PACKAGES += \
+    HalcyonBlackTheme
+
 # Theme Picker
 PRODUCT_PACKAGES += \
     ThemePicker
