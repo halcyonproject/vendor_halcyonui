@@ -65,7 +65,9 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    wellbeingconf
+    wellbeingconf \
+    googleconf
+
 
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
