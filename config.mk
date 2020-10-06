@@ -60,7 +60,8 @@ PRODUCT_PACKAGES += \
 # Navbar
 PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
-    GesturalNavigationOverlayMedium
+    GesturalNavigationOverlayMedium \
+    GesturalNavigationOverlayHidden
 
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
