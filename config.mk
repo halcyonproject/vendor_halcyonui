@@ -51,6 +51,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Apps
 PRODUCT_PACKAGES += \
+    Flipendo \
     NexusLauncherRelease \
     PixelThemesStub \
     ThemePicker \
