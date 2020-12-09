@@ -51,7 +51,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Apps
 PRODUCT_PACKAGES += \
-    NexusLauncherRelease
+    NexusLauncherRelease \
+    PixelThemesStub
 
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
