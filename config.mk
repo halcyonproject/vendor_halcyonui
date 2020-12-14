@@ -49,6 +49,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/conquerui/overlay
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/conquerui/overlay/common/
 
+# Apps
+PRODUCT_PACKAGES += \
+    NexusLauncherRelease
+
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
      PRODUCT_COPY_FILES += vendor/conquerui/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
@@ -70,4 +74,5 @@ else
 endif
 
 # Copy files
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/conquerui/etc,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/conquerui/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
