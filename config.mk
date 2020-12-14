@@ -53,6 +53,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     NexusLauncherRelease \
     PixelThemesStub \
+    ThemePicker \
     WallpaperPickerGoogleRelease
 
 # Bootanimation
