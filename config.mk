@@ -75,6 +75,7 @@ PRODUCT_PACKAGES += \
     FontArvoLato \
     FontGoogleSans \
     FontKai \
+    FontManrope \
     FontNotoSerifSource \
     FontRubik \
     FontVictor
