@@ -2,5 +2,4 @@
 <resources>
     <string name="config_recentsComponentName">com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>
     <string name="config_secondaryHomePackage">com.google.android.apps.nexuslauncher</string>
-    <string name="config_wallpaperCropperPackage">com.google.android.apps.wallpaper</string>
 </resources>
