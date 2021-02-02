@@ -77,6 +77,7 @@ PRODUCT_PACKAGES += \
     FontKai \
     FontManrope \
     FontNotoSerifSource \
+    FontOnePlusSans \
     FontRubik \
     FontVictor
 
