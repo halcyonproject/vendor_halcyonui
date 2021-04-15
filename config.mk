@@ -92,3 +92,6 @@ endif
 # Copy files
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/conquerui/etc,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/conquerui/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
+
+# Volume Style
+include packages/apps/VolumeStyle/plugins.mk
