@@ -57,7 +57,13 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     WallpaperPickerGoogleRelease
 
-# Navbar
+# Accent Color
+PRODUCT_PACKAGES += \
+    AccentBlueline \
+    AccentOxypink \
+    AccentPixelBlue
+
+# Navigation Bar
 PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
     GesturalNavigationOverlayMedium \
