@@ -24,8 +24,8 @@
     <!-- Additional UI Config -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
     <bool name="config_sendPackageName">true</bool>
-    <dimen name="config_dialogCornerRadius">24.0dip</dimen>
-    <dimen name="config_buttonCornerRadius">24.0dip</dimen>
+    <dimen name="config_dialogCornerRadius">16.0dip</dimen>
+    <dimen name="config_buttonCornerRadius">16.0dip</dimen>
     <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
 
     <!-- Package name that will receive an explicit manifest broadcast for
