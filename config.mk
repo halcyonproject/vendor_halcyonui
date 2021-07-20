@@ -69,6 +69,16 @@ PRODUCT_PACKAGES += \
     GesturalNavigationOverlayMedium \
     GesturalNavigationOverlayHidden
 
+# Fonts
+PRODUCT_PACKAGES += \
+    FontArbutus \
+    FontArvoLato \
+    FontGoogleSans \
+    FontKai \
+    FontNotoSerifSource \
+    FontRubik \
+    FontVictor
+
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
      PRODUCT_COPY_FILES += vendor/conquerui/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
