@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2020 The ConquerOS Project
+# Copyright (C) 2019-2021 The ConquerOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,37 +17,11 @@ LOCAL_PATH := $(call my-dir)
 
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
-# Offline charger
+# Accent Color
 PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
-# build.prop entrys
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.wallpapers_loc_request_suw=true
-
-# SetupWizard
-PRODUCT_PRODUCT_PROPERTIES += \
-    setupwizard.enable_assist_gesture_training=true \
-    setupwizard.feature.baseline_setupwizard_enabled=true \
-    setupwizard.feature.show_pixel_tos=true \
-    setupwizard.feature.show_support_link_in_deferred_setup=false \
-    setupwizard.theme=glif_v3_light
-
-# Gestures
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
-
-# IME
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.ime.bs_theme=true \
-    ro.com.google.ime.system_lm_dir=/system/product/usr/share/ime/google/d3_lms \
-    ro.com.google.ime.theme_id=5
-
-# Include package overlays
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/conquerui/overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    vendor/conquerui/overlay/common/
+    AccentBlueline \
+    AccentOxypink \
+    AccentPixelBlue
 
 # Apps
 PRODUCT_PACKAGES += \
@@ -56,30 +30,6 @@ PRODUCT_PACKAGES += \
     PixelThemesStub \
     ThemePicker \
     WallpaperPickerGoogleRelease
-
-# Accent Color
-PRODUCT_PACKAGES += \
-    AccentBlueline \
-    AccentOxypink \
-    AccentPixelBlue
-
-# Navigation Bar
-PRODUCT_PACKAGES += \
-    GesturalNavigationOverlayLong \
-    GesturalNavigationOverlayMedium \
-    GesturalNavigationOverlayHidden
-
-# Fonts
-PRODUCT_PACKAGES += \
-    FontArbutus \
-    FontArvoLato \
-    FontGoogleSans \
-    FontKai \
-    FontManrope \
-    FontNotoSerifSource \
-    FontOnePlusSans \
-    FontRubik \
-    FontVictor
 
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
@@ -101,9 +51,62 @@ else
     PRODUCT_COPY_FILES += vendor/conquerui/bootanimation/bootanimation-dark_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation-dark.zip
 endif
 
-# Copy files
+# Config Files
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/conquerui/etc,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc)
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/conquerui/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
+
+# Fonts
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/conquerui/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
+    vendor/conquerui/etc/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
+
+PRODUCT_PACKAGES += \
+    FontArbutus \
+    FontArvoLato \
+    FontGoogleSans \
+    FontKai \
+    FontManrope \
+    FontNotoSerifSource \
+    FontOnePlusSans \
+    FontRubik \
+    FontVictor
+
+# Gestures
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
+# IME
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.google.ime.bs_theme=true \
+    ro.com.google.ime.system_lm_dir=/system/product/usr/share/ime/google/d3_lms \
+    ro.com.google.ime.theme_id=5
+
+# Navigation Bar
+PRODUCT_PACKAGES += \
+    GesturalNavigationOverlayLong \
+    GesturalNavigationOverlayMedium \
+    GesturalNavigationOverlayHidden
+
+# Overlays
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/conquerui/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/conquerui/overlay/common/
+
+# Power off charing resource
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
+# SetupWizard
+PRODUCT_PRODUCT_PROPERTIES += \
+    setupwizard.enable_assist_gesture_training=true \
+    setupwizard.feature.baseline_setupwizard_enabled=true \
+    setupwizard.feature.show_pixel_tos=true \
+    setupwizard.feature.show_support_link_in_deferred_setup=false \
+    setupwizard.theme=glif_v3_light
 
 # Volume Style
 include packages/apps/VolumeStyle/plugins.mk
+
+# Wallpaper
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.wallpapers_loc_request_suw=true
