@@ -27,7 +27,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Flipendo \
     NexusLauncherRelease \
-    PixelThemesStub \
     ThemePicker \
     WallpaperPickerGoogleRelease
 
