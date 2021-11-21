@@ -53,6 +53,9 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/conquerui/overlay
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/conquerui/overlay/common/
 
+PRODUCT_PACKAGES += \
+    CustomPixelLauncherOverlay
+
 # Power off charing resource
 PRODUCT_PACKAGES += \
     charger_res_images \
