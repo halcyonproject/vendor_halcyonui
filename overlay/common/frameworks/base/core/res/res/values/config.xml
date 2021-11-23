@@ -11,7 +11,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
     <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
     <bool name="config_useRoundIcon">true</bool>
 
@@ -24,11 +23,10 @@
     <!-- Additional UI Config -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
     <bool name="config_sendPackageName">true</bool>
-    <dimen name="config_dialogCornerRadius">16.0dip</dimen>
-    <dimen name="config_buttonCornerRadius">16.0dip</dimen>
+    <dimen name="config_bottomDialogCornerRadius">16dp</dimen>
+    <dimen name="config_dialogCornerRadius">28dp</dimen>
+    <dimen name="config_buttonCornerRadius">4dp</dimen>
     <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
-
-    <!-- Package name that will receive an explicit manifest broadcast for
-         android.os.action.POWER_SAVE_MODE_CHANGED. -->
-    <string name="config_powerSaveModeChangedListenerPackage">com.google.android.flipendo</string>
+    <dimen name="system_app_widget_background_radius">28dp</dimen>
+    <dimen name="system_app_widget_inner_radius">20dp</dimen>
 </resources>

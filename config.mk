@@ -17,19 +17,6 @@ LOCAL_PATH := $(call my-dir)
 
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
-# Accent Color
-PRODUCT_PACKAGES += \
-    AccentBlueline \
-    AccentOxypink \
-    AccentPixelBlue
-
-# Apps
-PRODUCT_PACKAGES += \
-    Flipendo \
-    NexusLauncherRelease \
-    ThemePicker \
-    WallpaperPickerGoogleRelease
-
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
      PRODUCT_COPY_FILES += vendor/conquerui/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
@@ -46,32 +33,12 @@ else
     PRODUCT_COPY_FILES += vendor/conquerui/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
 
-# Config Files
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/conquerui/etc,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc)
-
-# Fonts
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/conquerui/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
-    vendor/conquerui/etc/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
-
-PRODUCT_PACKAGES += \
-    FontArbutus \
-    FontArvoLato \
-    FontGoogleSans \
-    FontKai \
-    FontManrope \
-    FontNotoSerifSource \
-    FontOnePlusSans \
-    FontRubik \
-    FontVictor
-
 # Gestures
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
 
 # IME
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.ime.bs_theme=true \
     ro.com.google.ime.system_lm_dir=/system/product/usr/share/ime/google/d3_lms \
     ro.com.google.ime.theme_id=5
 
@@ -93,15 +60,14 @@ PRODUCT_PACKAGES += \
 
 # SetupWizard
 PRODUCT_PRODUCT_PROPERTIES += \
-    setupwizard.enable_assist_gesture_training=true \
     setupwizard.feature.baseline_setupwizard_enabled=true \
-    setupwizard.feature.show_pixel_tos=true \
+    ro.setupwizard.enterprise_mode=1 \
+    ro.setupwizard.rotation_locked=true \
+    setupwizard.enable_assist_gesture_training=true \
+    setupwizard.theme=glif_v3_light \
+    setupwizard.feature.skip_button_use_mobile_data.carrier1839=true \
+    setupwizard.feature.show_pai_screen_in_main_flow.carrier1839=false \
+    setupwizard.feature.show_pixel_tos=false \
     setupwizard.feature.show_support_link_in_deferred_setup=false \
-    setupwizard.theme=glif_v3_light
-
-# Volume Style
-include packages/apps/VolumeStyle/plugins.mk
-
-# Wallpaper
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.wallpapers_loc_request_suw=true
+    setupwizard.feature.day_night_mode_enabled=true \
+    setupwizard.feature.portal_notification=true
