@@ -33,15 +33,6 @@ else
     PRODUCT_COPY_FILES += vendor/conquerui/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
 
-# Gestures
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
-
-# IME
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.ime.system_lm_dir=/system/product/usr/share/ime/google/d3_lms \
-    ro.com.google.ime.theme_id=5
-
 # Navigation Bar
 PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
@@ -60,17 +51,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
-
-# SetupWizard
-PRODUCT_PRODUCT_PROPERTIES += \
-    setupwizard.feature.baseline_setupwizard_enabled=true \
-    ro.setupwizard.enterprise_mode=1 \
-    ro.setupwizard.rotation_locked=true \
-    setupwizard.enable_assist_gesture_training=true \
-    setupwizard.theme=glif_v3_light \
-    setupwizard.feature.skip_button_use_mobile_data.carrier1839=true \
-    setupwizard.feature.show_pai_screen_in_main_flow.carrier1839=false \
-    setupwizard.feature.show_pixel_tos=false \
-    setupwizard.feature.show_support_link_in_deferred_setup=false \
-    setupwizard.feature.day_night_mode_enabled=true \
-    setupwizard.feature.portal_notification=true
