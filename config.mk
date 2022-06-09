@@ -33,10 +33,6 @@ else
     PRODUCT_COPY_FILES += vendor/conquerui/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
 
-# Navigation Bar
-PRODUCT_PACKAGES += \
-    NavigationBarModeGesturalOverlayFS
-
 # Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/conquerui/overlay
 DEVICE_PACKAGE_OVERLAYS += \
