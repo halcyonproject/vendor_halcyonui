@@ -93,4 +93,7 @@
     <alias name="plus-jakarta-sans-bold" to="plus-jakarta-sans" weight="700" />
     <alias name="plus-jakarta-sans-black" to="plus-jakarta-sans" weight="900" />
     
+    <family customizationType="new-named-family" name="google-sans-clock">
+      <font>GoogleSansClock-Regular.ttf</font>
+    </family>
 </fonts-modification>
