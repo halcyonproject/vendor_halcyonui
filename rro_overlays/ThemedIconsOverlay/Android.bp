@@ -1,6 +1,6 @@
 runtime_resource_overlay {
-    name: "CustomPixelLauncherOverlay",
-    theme: "CustomPixelLauncherOverlay",
+    name: "ThemedIconsOverlay",
+    theme: "ThemedIconsOverlay",
     certificate: "platform",
     sdk_version: "current",
     product_specific: true

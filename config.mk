@@ -38,13 +38,15 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/halcyonui/overlay
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/halcyonui/overlay/common/
 
-PRODUCT_PACKAGES += \
-    CustomPixelLauncherOverlay
-
 # Power off charing resource
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
+
+# Nest Launcher
+PRODUCT_PACKAGES += \
+    NestQuickStep \
+    ThemedIconsOverlay
 
 # Theme Picker
 PRODUCT_PACKAGES += \
