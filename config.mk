@@ -43,6 +43,12 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
+# Quick Tap
+ifeq ($(TARGET_SUPPORTS_QUICK_TAP),true)
+PRODUCT_PACKAGES += \
+    quick_tap
+endif
+
 # Nest Launcher
 PRODUCT_PACKAGES += \
     NestQuickStep \
