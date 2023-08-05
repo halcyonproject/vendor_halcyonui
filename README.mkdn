@@ -1,0 +1,9 @@
+# halcyonUI Vendor Repository
+
+This repository contains configurations, features, overlays, and packages of halcyonUI.
+
+## Building Halcyon
+To build Halcyon, you can refer to our [project manifest](https://github.com/halcyonproject/manifest) for further information and instructions.
+
+## Contribution
+Feel free to contribute by submitting a Pull Request to our repository. We will review your PR as soon as possible!

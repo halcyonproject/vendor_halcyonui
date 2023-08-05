@@ -2,6 +2,6 @@ prebuilt_etc {
     name: "quick_tap",
     product_specific: true,
     sub_dir: "sysconfig",
-    src: "sysconfig/quick_tap.xml",
+    src: "etc/sysconfig/quick_tap.xml",
     filename_from_src: true,
 }
