@@ -33,6 +33,22 @@ else
     PRODUCT_COPY_FILES += vendor/halcyonui/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
 
+# Fonts
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/halcyonui/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
+    vendor/halcyonui/etc/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
+
+PRODUCT_PACKAGES += \
+    FontArbutus \
+    FontArvoLato \
+    FontGoogleSans \
+    FontKai \
+    FontManrope \
+    FontNotoSerifSource \
+    FontOnePlusSans \
+    FontRubik \
+    FontVictor
+
 # Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/halcyonui/overlay
 DEVICE_PACKAGE_OVERLAYS += \
