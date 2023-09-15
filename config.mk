@@ -17,21 +17,8 @@ LOCAL_PATH := $(call my-dir)
 
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
-# Bootanimation
-ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
-     PRODUCT_COPY_FILES += vendor/halcyonui/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-else ifeq ($(TARGET_BOOT_ANIMATION_RES),1440)
-     PRODUCT_COPY_FILES += vendor/halcyonui/bootanimation/bootanimation_1440.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-else ifeq ($(TARGET_BOOT_ANIMATION_RES),720)
-     PRODUCT_COPY_FILES += vendor/halcyonui/bootanimation/bootanimation_720.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-else
-    ifeq ($(TARGET_BOOT_ANIMATION_RES),)
-        $(warning "halcyonUI: TARGET_BOOT_ANIMATION_RES is undefined, assuming 1080p")
-    else
-        $(warning "halcyonUI: Current bootanimation res is not supported, forcing 1080p")
-    endif
-    PRODUCT_COPY_FILES += vendor/halcyonui/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-endif
+# Boot Animation
+$(call inherit-product, vendor/halcyonui/bootanimation/bootanimation.mk)
 
 # Fonts
 PRODUCT_COPY_FILES += \
