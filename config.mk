@@ -111,3 +111,7 @@ PRODUCT_PACKAGES += \
 # Theme Picker
 PRODUCT_PACKAGES += \
     ThemePicker
+
+# Google Dialer Config
+PRODUCT_PACKAGES += \
+    GoogleDialerConfOverlay
