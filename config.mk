@@ -33,6 +33,7 @@ PRODUCT_PACKAGES += \
     FontManrope \
     FontNotoSerifSource \
     FontOnePlusSans \
+    FontPlusJakartaSans \
     FontRubik \
     FontVictor
 

@@ -72,4 +72,25 @@
     <alias name="op-sans-bold" to="op-sans" weight="700" />
     <alias name="op-sans-black" to="op-sans" weight="900" />
 
+    <family customizationType="new-named-family" name="plus-jakarta-sans">
+       <font weight="100" style="normal">PlusJakartaSans-ExtraLight.ttf</font>
+       <font weight="100" style="italic">PlusJakartaSans-ExtraLightItalic.ttf</font>
+       <font weight="300" style="normal">PlusJakartaSans-Light.ttf</font>
+       <font weight="300" style="italic">PlusJakartaSans-LightItalic.ttf</font>
+       <font weight="400" style="normal">PlusJakartaSans-Regular.ttf</font>
+       <font weight="400" style="italic">PlusJakartaSans-Italic.ttf</font>
+       <font weight="500" style="normal">PlusJakartaSans-Medium.ttf</font>
+       <font weight="500" style="italic">PlusJakartaSans-MediumItalic.ttf</font>
+       <font weight="700" style="normal">PlusJakartaSans-Bold.ttf</font>
+       <font weight="700" style="italic">PlusJakartaSans-BoldItalic.ttf</font>
+       <font weight="900" style="normal">PlusJakartaSans-ExtraBold.ttf</font>
+       <font weight="900" style="italic">PlusJakartaSans-ExtraBoldItalic.ttf</font>
+    </family>
+    <alias name="plus-jakarta-sans-thin" to="plus-jakarta-sans" weight="100" />
+    <alias name="plus-jakarta-sans-light" to="plus-jakarta-sans" weight="300" />
+    <alias name="plus-jakarta-sans-regular" to="plus-jakarta-sans" weight="400" />
+    <alias name="plus-jakarta-sans-medium" to="plus-jakarta-sans" weight="500" />
+    <alias name="plus-jakarta-sans-bold" to="plus-jakarta-sans" weight="700" />
+    <alias name="plus-jakarta-sans-black" to="plus-jakarta-sans" weight="900" />
+    
 </fonts-modification>
