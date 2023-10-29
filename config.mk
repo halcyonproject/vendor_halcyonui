@@ -101,9 +101,15 @@ PRODUCT_PACKAGES += \
 endif
 
 # Nest Launcher
+ifneq ($(HALCYON_BUILD_TYPE),Enchanted)
+PRODUCT_PACKAGES += \
+    NestLauncherPrebuilt \
+    ThemedIconsOverlay
+else
 PRODUCT_PACKAGES += \
     NestQuickStep \
     ThemedIconsOverlay
+endif
 
 # Theme
 PRODUCT_PACKAGES += \
