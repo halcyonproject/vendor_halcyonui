@@ -34,6 +34,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ThemedIconsOverlay
 
-
 PRODUCT_PACKAGES += \
     ThemePicker
+
+# Clocks packages
+PRODUCT_PACKAGES += \
+    SystemUIClocks-BigNum \
+    SystemUIClocks-Calligraphy \
+    SystemUIClocks-Flex \
+    SystemUIClocks-Growth \
+    SystemUIClocks-Inflate \
+    SystemUIClocks-Metro \
+    SystemUIClocks-NumOverlap \
+    SystemUIClocks-Weather
