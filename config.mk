@@ -35,10 +35,6 @@ PRODUCT_PACKAGES += \
     ThemedIconsOverlay
 
 PRODUCT_PACKAGES += \
-    ThemePicker
-
-# Clocks packages
-PRODUCT_PACKAGES += \
     SystemUIClocks-BigNum \
     SystemUIClocks-Calligraphy \
     SystemUIClocks-Flex \
