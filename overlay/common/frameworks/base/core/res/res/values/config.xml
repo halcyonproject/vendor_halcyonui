@@ -29,4 +29,8 @@
     <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
     <dimen name="system_app_widget_background_radius">28dp</dimen>
     <dimen name="system_app_widget_inner_radius">20dp</dimen>
+
+    <!-- PLEASE REMOVE THIS MEMORY ROBBERY LAUNCHER ASAP -->
+    <string name="config_recentsComponentName">com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>
+
 </resources>

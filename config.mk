@@ -43,3 +43,7 @@ PRODUCT_PACKAGES += \
     SystemUIClocks-Metro \
     SystemUIClocks-NumOverlap \
     SystemUIClocks-Weather
+
+# Lagfest Memory Robbery Launcher
+PRODUCT_PACKAGES += \
+    LagfestMemoryRobberyLauncher
