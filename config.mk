@@ -34,16 +34,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ThemedIconsOverlay
 
-PRODUCT_PACKAGES += \
-    SystemUIClocks-BigNum \
-    SystemUIClocks-Calligraphy \
-    SystemUIClocks-Flex \
-    SystemUIClocks-Growth \
-    SystemUIClocks-Inflate \
-    SystemUIClocks-Metro \
-    SystemUIClocks-NumOverlap \
-    SystemUIClocks-Weather
-
 # Lagfest Memory Robbery Launcher
 PRODUCT_PACKAGES += \
     LagfestMemoryRobberyLauncher
