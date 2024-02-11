@@ -33,7 +33,3 @@ PRODUCT_PACKAGES += \
 # Nest Launcher
 PRODUCT_PACKAGES += \
     ThemedIconsOverlay
-
-# Lagfest Memory Robbery Launcher
-PRODUCT_PACKAGES += \
-    LagfestMemoryRobberyLauncher
