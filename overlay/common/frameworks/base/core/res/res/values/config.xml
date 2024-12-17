@@ -29,4 +29,8 @@
     <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
     <dimen name="system_app_widget_background_radius">28dp</dimen>
     <dimen name="system_app_widget_inner_radius">20dp</dimen>
+
+    <!-- circle to search -->
+    <string name="config_defaultContextualSearchPackageName" translatable="false">com.google.android.googlequicksearchbox</string>
+
 </resources>
