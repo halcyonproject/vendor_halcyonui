@@ -21,6 +21,9 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 # Boot Animation
 $(call inherit-product, vendor/halcyonui/bootanimation/bootanimation.mk)
 
+# Include Halcyon audio cOnfig
+include vendor/halcyonui/media/audio/audio.mk
+
 # Fonts
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/halcyonui/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
