@@ -51,4 +51,7 @@
         <item>com.android.systemui.clocks.weather</item>
     </string-array>
 
+    <!-- Default SmartSpace Service provider -->
+    <string name="config_defaultSmartspaceService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService</string>
+
 </resources>
