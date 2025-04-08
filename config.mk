@@ -38,6 +38,7 @@ PRODUCT_PACKAGES += \
     FontNotoSerifSource \
     FontOnePlusSans \
     FontPlusJakartaSans \
+    FontRosemary \
     FontRubik \
     FontVictor
 

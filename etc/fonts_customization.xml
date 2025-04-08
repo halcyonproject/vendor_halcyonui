@@ -92,5 +92,12 @@
     <alias name="plus-jakarta-sans-medium" to="plus-jakarta-sans" weight="500" />
     <alias name="plus-jakarta-sans-bold" to="plus-jakarta-sans" weight="700" />
     <alias name="plus-jakarta-sans-black" to="plus-jakarta-sans" weight="900" />
-    
+
+    <!-- Rosemary -->
+    <family customizationType="new-named-family" name="rosemary">
+        <font weight="300" style="normal">Rosemary-Regular.ttf</font>
+    </family>
+    <alias name="rosemary-semi-bold" to="rosemary" weight="600" />
+    <alias name="rosemary-bold" to="rosemary" weight="700" />
+
 </fonts-modification>
