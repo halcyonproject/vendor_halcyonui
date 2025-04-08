@@ -33,6 +33,7 @@ PRODUCT_PACKAGES += \
     FontArbutus \
     FontArvoLato \
     FontGoogleSans \
+    FontInter \
     FontKai \
     FontManrope \
     FontNotoSerifSource \
