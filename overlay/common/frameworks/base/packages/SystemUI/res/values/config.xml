@@ -16,4 +16,7 @@
     <!-- Enable lockscreen shortcuts customization -->
     <bool name="custom_lockscreen_shortcuts_enabled">true</bool>
 
+    <!-- Enable long-pressing on keyguard to customize lockscreen -->
+    <bool name="long_press_keyguard_customize_lockscreen_enabled">true</bool>
+
 </resources>
