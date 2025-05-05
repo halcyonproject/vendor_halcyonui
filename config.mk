@@ -33,11 +33,13 @@ PRODUCT_PACKAGES += \
     FontArbutus \
     FontArvoLato \
     FontGoogleSans \
+    FontInter \
     FontKai \
     FontManrope \
     FontNotoSerifSource \
     FontOnePlusSans \
     FontPlusJakartaSans \
+    FontRosemary \
     FontRubik \
     FontVictor
 

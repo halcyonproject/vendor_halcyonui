@@ -92,5 +92,34 @@
     <alias name="plus-jakarta-sans-medium" to="plus-jakarta-sans" weight="500" />
     <alias name="plus-jakarta-sans-bold" to="plus-jakarta-sans" weight="700" />
     <alias name="plus-jakarta-sans-black" to="plus-jakarta-sans" weight="900" />
-    
+
+    <!-- Inter -->
+    <family customizationType="new-named-family" name="inter">
+       <font weight="100" style="normal">Inter-ExtraLight.ttf</font>
+       <font weight="100" style="italic">Inter-ExtraLightItalic.ttf</font>
+       <font weight="300" style="normal">Inter-Light.ttf</font>
+       <font weight="300" style="italic">Inter-LightItalic.ttf</font>
+       <font weight="400" style="normal">Inter-Regular.ttf</font>
+       <font weight="400" style="italic">Inter-Italic.ttf</font>
+       <font weight="500" style="normal">Inter-Medium.ttf</font>
+       <font weight="500" style="italic">Inter-MediumItalic.ttf</font>
+       <font weight="700" style="normal">Inter-Bold.ttf</font>
+       <font weight="700" style="italic">Inter-BoldItalic.ttf</font>
+       <font weight="900" style="normal">Inter-ExtraBold.ttf</font>
+       <font weight="900" style="italic">Inter-ExtraBoldItalic.ttf</font>
+    </family>
+    <alias name="inter-thin" to="inter" weight="100" />
+    <alias name="inter-light" to="inter" weight="300" />
+    <alias name="inter-regular" to="inter" weight="400" />
+    <alias name="inter-medium" to="inter" weight="500" />
+    <alias name="inter-bold" to="inter" weight="700" />
+    <alias name="inter-black" to="inter" weight="900" />
+
+    <!-- Rosemary -->
+    <family customizationType="new-named-family" name="rosemary">
+        <font weight="300" style="normal">Rosemary-Regular.ttf</font>
+    </family>
+    <alias name="rosemary-semi-bold" to="rosemary" weight="600" />
+    <alias name="rosemary-bold" to="rosemary" weight="700" />
+
 </fonts-modification>
