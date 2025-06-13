@@ -98,7 +98,11 @@ PRODUCT_PACKAGES += \
      SystemUIClocks-Metro \
      SystemUIClocks-NumOverlap \
      SystemUIClocks-Weather
-     
+
+# Expressive Material Design
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    is_expressive_design_enabled=true
+
 # Navigation Bar
 PRODUCT_PACKAGES += \
     ImmersiveNavigationOverlay
