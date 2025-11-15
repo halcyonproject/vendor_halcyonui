@@ -56,4 +56,7 @@
     <string name="config_headlineFontFamilyMedium">google-sans-medium</string>
     <string name="config_headlineFontFeatureSettings">ss03</string>
 
+    <!-- AOD wallpaper -->
+    <bool name="config_dozeSupportsAodWallpaper">true</bool>
+
 </resources>
