@@ -41,6 +41,8 @@ PRODUCT_COPY_FILES += \
     $(AUDIO_PATH)/ui/Unlock.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Unlock.ogg
 
 # Set default ringtone and notification sound
+ifneq ($(WITH_GMS),true)
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.notification_sound=Brightside.ogg \
     ro.config.ringtone=Sticks.ogg
+endif
