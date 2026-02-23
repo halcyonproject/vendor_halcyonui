@@ -37,6 +37,6 @@
     <string name="config_defaultSmartspaceService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService</string>
 
     <!-- Name of the font family to use in the default lockscreen clock -->
-    <string name="config_clockFontFamily" translatable="false">google-sans-clock</string>
+    <string name="config_clockFontFamily" translatable="false">google-sans-flex-clock</string>
 
 </resources>
