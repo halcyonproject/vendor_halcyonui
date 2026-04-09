@@ -92,12 +92,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
      SystemUIClocks-BigNum \
      SystemUIClocks-Calligraphy \
-     SystemUIClocks-Flex \
      SystemUIClocks-Growth \
      SystemUIClocks-Inflate \
      SystemUIClocks-Metro \
-     SystemUIClocks-NumOverlap \
-     SystemUIClocks-Weather
+     SystemUIClocks-NumOverlap
 
 # Expressive Material Design
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
