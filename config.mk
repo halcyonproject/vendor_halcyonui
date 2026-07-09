@@ -49,7 +49,7 @@ PRODUCT_PACKAGES += \
      SystemUIClocks-NumOverlap
 
 # Expressive Material Design
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     is_expressive_design_enabled=true
 
 # Navigation Bar
