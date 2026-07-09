@@ -10,4 +10,5 @@ TARGET_SCREEN_HEIGHT ?= 1920
 
 # Bootanimation
 PRODUCT_PACKAGES += \
-    bootanimation.zip
+    bootanimation.zip \
+    bootanimation-dark.zip

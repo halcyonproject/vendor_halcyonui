@@ -1,0 +1,5 @@
+c 1 0 part0 #FFFFFF -1
+c 0 0 part1 #FFFFFF -1
+c 1 0 part2 #FFFFFF -1
+c 1 1 part3 #FFFFFF -1
+c 1 0 part4 #FFFFFF -1
