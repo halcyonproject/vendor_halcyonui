@@ -63,3 +63,14 @@ android_app_import {
  	},
  	system_ext_specific: true,
  }
+ 
+ android_app_import {
+ 	name: "SystemUIClocks-Weather",
+ 	owner: "google",
+ 	apk: "SystemUIClocks-Weather/SystemUIClocks-Weather.apk",
+ 	certificate: "platform",
+ 	dex_preopt: {
+ 		enabled: false,
+ 	},
+ 	system_ext_specific: true,
+ }

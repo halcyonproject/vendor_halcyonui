@@ -46,7 +46,8 @@ PRODUCT_PACKAGES += \
      SystemUIClocks-Growth \
      SystemUIClocks-Inflate \
      SystemUIClocks-Metro \
-     SystemUIClocks-NumOverlap
+     SystemUIClocks-NumOverlap \
+     SystemUIClocks-Weather
 
 # Expressive Material Design
 PRODUCT_PRODUCT_PROPERTIES += \
