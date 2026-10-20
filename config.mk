@@ -61,6 +61,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ThemedIconsOverlay
 
+# Nest Wallpapers
+PRODUCT_PACKAGES += \
+    NestWallpapers
+
 # One Handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_one_handed_mode=true \

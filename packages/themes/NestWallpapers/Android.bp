@@ -1,0 +1,5 @@
+android_app {
+    name: "NestWallpapers",
+    sdk_version: "current",
+    product_specific: true,
+}

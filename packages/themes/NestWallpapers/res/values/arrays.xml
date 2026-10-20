@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <array name="partner_wallpapers" translatable="false">
+        <item>calla</item>
+        <item>intersect</item>
+        <item>light</item>
+        <item>orbit</item>
+        <item>ring</item>
+        <item>sate</item>
+    </array>
+</resources>
