@@ -35,4 +35,7 @@
     <!-- Enable long-pressing on keyguard to customize lockscreen -->
     <bool name="long_press_keyguard_customize_lockscreen_enabled">true</bool>
 
+    <!-- Combined shade (Single Shade) enabled by default on phones -->
+    <bool name="config_dualShadeEnabledByDefault">false</bool>
+
 </resources>
